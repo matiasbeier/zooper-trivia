@@ -1,0 +1,351 @@
+.containerGameRoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== LISTA DE JUGADORES ====== */
+.containerListPlayerRoom {
+  background-color: rgba(0, 0, 0, 0.392);
+  border: solid 3px rgba(216, 221, 226, 0.253);
+  width: 310px;
+  height: 540px;
+  margin: 3rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.4rem;
+}
+.contentListPlayerRoom {
+  /* background-color: rgba(216, 221, 226, 0.349); */
+  background-color: rgba(181, 188, 197, 0.874);
+  /* border: solid 3px rgba(216, 221, 226, 0.253); */
+  border: solid 3px rgba(117, 7, 190, 0.295);
+  width: 250px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.contentPlayerRoom {
+  /* background-color: rgba(216, 221, 226, 0.349); */
+  background-color: rgba(181, 188, 197, 0.874);
+  /* border: solid 3px rgba(216, 221, 226, 0.253); */
+  border: solid 3px rgba(117, 7, 190, 0.295);
+  width: 250px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  box-shadow: 0 0 5px  5px rgba(255, 255, 255, 0.695);
+}
+.positionPlayers {
+  color: rgba(0, 0, 0, 0.692);
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+}
+.infoPlayer {
+  display: flex;
+  flex-direction: column;
+  /* color: rgba(230, 231, 232, 0.539); */
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.allPlayers{
+  color: white;
+}
+.eachPlayer{
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== HEADER ====== */
+.containerHeaderGame{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.containerHeader button{
+  position: relative;
+  font-size: 1.3rem;
+  padding: .5rem 1rem .5rem 1rem;
+  left: -10rem;
+  background-color: rgba(155, 17, 17, 0.651);
+  color: rgba(230, 231, 232, 0.726);
+  border: 2px solid rgba(230, 231, 232, 0.539);
+  border-radius: .4rem;
+}
+.containerHeader img{
+  margin-left: -3rem;
+}
+
+/* ====== GAME ====== */
+.containerGame {
+  background-color: rgba(0, 0, 0, 0.467);
+  border: solid 3px rgba(216, 221, 226, 0.253);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+  width: 430px;
+  height: 630px;
+}
+
+/* ====== CATEGORIA ====== */
+.contentNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  margin-left: -3rem;
+}
+.contentNav h3 {
+  background-color: rgba(21, 108, 195, 0.87);
+  border-radius: 2rem;
+  margin-left: -3rem;
+  height: 2.5rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(230, 231, 232, 0.877);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}   
+
+/* ====== PREGUNTA ====== */
+.question {
+  background-color: rgba(254, 254, 254, 0.71);
+  border-radius: 0.3rem;
+  margin: 1rem;
+  padding: 1rem;
+  width: 370px;
+  height: 110px;
+  font-size: 13px;
+}
+
+/* ====== IMAGEN ====== */
+.imageQuestion img {
+  border-radius: 0.4rem;
+  height: 130px;
+  width: 220px;
+}
+
+/* ====== RESPUESTAS ====== */
+.contentQuestions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.4rem;
+}
+.contentQuestions input {
+  background-color: rgba(254, 254, 254, 0.71);
+  padding: 0.5rem;
+  font-size: 15px;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  border: none;
+  width: 24rem;
+}
+.contentQuestions input:hover {
+  background-color: rgba(158, 157, 157, 0.356);
+  color: rgba(230, 231, 232, 0.539);
+  cursor: url("../IMG//pata.png");
+}
+.buttonStart {
+  background-color: #e87613;
+  border: 1px solid #f87808;
+  box-shadow: 5px 5px 20px rgba(255, 163, 4, 0.893);
+  color: rgba(240, 248, 255, 0.93);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  font-family: 'Trebuchet MS';
+  font-size: 30px;
+  
+}
+.buttonStart:hover {
+  background-color: rgba(158, 157, 157, 0.356);
+  color: rgba(24, 25, 26, 0.539);
+  cursor: url("../IMG//pata.png");
+}
+
+
+/* ===== POWERS AND COINS =====*/
+.containerPowers{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-top: -0.5rem;
+}
+.contentPower1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: rgba(240, 248, 255, 0.845);
+  font-weight: bolder;
+  font-size: 12px;
+}
+.contentPower1:hover::after{
+  position: absolute;
+  color:white;
+  content: "Elimina 1 opción";
+  padding: 0.8rem;
+  width: 10rem;
+  background-color: #535252d8;
+  border-radius: 5px;
+  transition: 1s;
+  top: -2.5rem;
+}
+.contentPower2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: rgba(240, 248, 255, 0.845);
+  font-weight: bolder;
+  font-size: 12px;
+}
+.contentPower2:hover::after{
+  position: absolute;
+  color:white;
+  content: "Elimina 2 opciones";
+  padding: 0.8rem;
+  width: 10rem;
+  background-color: #535252d8;
+  border-radius: 5px;
+  transition: 1s;
+  top: -2.5rem;
+}
+.contentPower3{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: rgba(240, 248, 255, 0.845);
+  font-weight: bolder;
+  font-size: 12px;
+}
+.contentPower3:hover::after{
+  position: absolute;
+  color:white;
+  content: "Puntos X2";
+  padding: 0.8rem;
+  width: 7rem;
+  background-color: #535252d8;
+  border-radius: 5px;
+  transition: 1s;
+  top: -2.5rem;
+}
+.powers {
+  margin: 0.6rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.powers :hover{
+  cursor: url("../IMG//pata.png");
+}
+
+
+/* ===== CHAT =====*/
+.containerChatGame {
+  /* background-color: rgba(216, 221, 226, 0.281); */
+  background-color: rgba(0, 0, 0, 0.392);
+  border-bottom: solid 3px rgba(216, 221, 226, 0.253);
+  border-left: solid 3px rgba(216, 221, 226, 0.253);
+  border-right: solid 3px rgba(216, 221, 226, 0.253);
+  min-width: 280px;
+  height: 500px;
+  margin: 3rem;
+  display: flex;
+  align-items: flex-start;
+  overflow-y: scroll;
+  flex-direction: column-reverse;
+  position: relative;
+  border-radius: 0 0 0.4rem 0.4rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  /* color: rgb(33, 165, 0); */
+  color: rgb(253, 249, 28);
+  font-weight: bold;
+}
+.containerChatGame::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.containerChatGame::-webkit-scrollbar:vertical {
+  width:10px;
+}
+.containerChatGame::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 1px solid #c8cacc;
+}
+.title{
+  font-weight: bold;
+  color: rgba(230, 231, 232, 0.877);
+  border-radius: 0.4rem 0.4rem 0 0;
+  border-top: solid 3px rgba(216, 221, 226, 0.253);
+  border-left: solid 3px rgba(216, 221, 226, 0.253);
+  border-right: solid 3px rgba(216, 221, 226, 0.253);
+  margin-left: 3rem;
+  z-index: 200;
+  position: relative;
+  top: 3rem;
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.392);
+}
+.containerChatGame span  {
+  display: flex;
+  color: rgba(230, 231, 232, 0.539);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.loadingGif {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 430px;
+  height: 700px;
+}
+
+.loadingGif img {
+  width: 500px;
+}
+
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (max-width: 500px) {
+  .containerGame {
+    margin: 2rem;
+    width: 350px;
+    height: 685px;
+  }
+  .containerHeader button{
+    margin-left: 1rem;
+  }
+  .contentNav h3 {
+    width: 10rem;
+  } 
+  .question {
+    width: 280px;
+    height: 160px;
+  }
+  .contentQuestions input {
+    width: 17rem;
+  }
+  .containerListPlayerRoom {
+    display: none;
+  }
+  .containerChatGame {
+    display: none;
+  }
+  .title {
+    display: none;
+  }
+  .loadingGif img {
+    width: 350px;
+  }
+}

@@ -1,0 +1,251 @@
+/* ====== CONTAINER ====== */
+.container {  
+  border-radius: 0.4rem;
+  
+}
+
+/* ====== NAV ====== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.buttonsNav button {
+  margin-top: 0.5rem;
+  margin-right: -0.8rem;
+  border-radius: 0.3rem;
+  color: rgb(255, 223, 134);
+  border: none;
+}
+.buttonCerrarSesión {
+  padding-bottom: 0.2rem;
+}
+.infoUser {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  background-color: rgba(10, 19, 4, 0.388);
+  margin-top: 0.5rem;
+  height: 5.5rem;
+  width: 14rem;
+  border-radius: 10px;
+  color: rgba(221, 221, 221, 0.961);
+}
+.avatarCard {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.nameUser {
+  display: flex;
+}
+.nameUser span {
+  margin-left: 0.6rem;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* ====== CONTENT ====== */
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contentButtons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+  margin-left: 2rem;
+}
+.contentButtons button{
+  width: 14rem;
+  height: 3rem;
+  font-size: 1rem;
+  margin: 0.6rem;
+}
+.button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: rgba(216, 221, 226, 0.4);
+  color: rgba(221, 221, 221, 0.829);
+  border: none;
+}
+.button:hover {
+  cursor: url("../IMG/pata.png"), auto;
+  background-color: rgba(154, 158, 161, 0.4);
+}
+
+/* ====== CARDS ====== */
+.cards {
+  border-radius: 0.5rem;
+  width: 600px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(39, 12, 1);
+  font-family: 'Skranji', cursive;
+}
+.cards button:hover {
+  cursor: url("../IMG/pata.png"), auto;
+}
+.containerCard {
+  color: rgb(39, 12, 1);
+  margin-bottom: 3.7rem;
+}
+.carruselIndicación{
+  margin-bottom: 4rem;
+}
+.imgMoneda {
+  margin-bottom: 15px;
+}
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 1200px) {
+  .nav__smartphone {
+    display: none;
+  }
+  .contentSocialSmartphone {
+    display: none;
+  }
+  #prueba {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo img {
+    width: 300px;
+  }
+  .contentButtons button{
+    width: 11rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    margin: 0.6rem;
+  }
+  .cards {
+    width: 500px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+  }
+  .containerCard {
+    margin-bottom: 2rem;
+  }
+
+}
+@media screen and (min-width: 500px) {
+  .nav__smartphone {
+    display: none;
+  }
+  .contentSocialSmartphone {
+    display: none;
+  }
+  #prueba {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .contentSocial {
+    display: none;
+  }
+  .contentNav__smartphone {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .infoUser {
+    width: 12rem;
+  }
+  .content {
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  .contentSocialSmartphone {
+    padding-bottom: 4rem;
+  }
+}
+
+
+/* ===== SOCIAL ICONS =====*/
+
+.contentSocial {
+  margin-right: 12rem;
+}
+
+.social-icons {
+  display: block;
+  justify-content: center;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+  margin-block-end: 1em;
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  -webkit-margin-end: 0;
+  margin-inline-end: 0;
+  -webkit-padding-start: 20px;
+  padding-inline-start: 20px;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.social-icons li {
+  text-align: -webkit-match-parent;
+  display: inline-block;
+  margin: 0.25em;
+  position: relative;
+  font-size: 1.2em;
+  vertical-align: top;
+  /* esto le da el tamaño a los icons */
+}
+
+.social-icons i {
+  color: rgb(255, 223, 134);
+  position: absolute;
+  top: 0.3em;
+  /* con top y left marco la distancia del icon hacia el box donde se encuentra */
+  left: 0.65em;
+  transition: all 265ms ease-out;
+  vertical-align: top;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  background: linear-gradient(45deg, rgb(255, 149, 0), rgba(9, 20, 33, 0.511));
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+/* La sig propiedad hace el efecto hover de los iconos de socialmedia */
+.social-icons a:hover i {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  color: rgb(255, 223, 134);
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}

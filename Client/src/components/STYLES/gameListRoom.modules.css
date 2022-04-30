@@ -1,0 +1,144 @@
+/* ===== CONTENEDOR =====*/
+.containerGameList {
+  max-width: 700px;
+  border: solid 4px rgba(216, 221, 226, 0.4);
+  background-color: rgba(45, 44, 44, 0.616);
+  min-height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  border-radius: 0.4rem;
+  color: rgba(221, 221, 221, 0.829);
+}
+
+/* ===== MUSICA =====*/
+
+.containerMusic {
+  position: relative;
+  bottom: -2rem;
+  right: 4rem;
+  margin-top: -1rem;
+}
+
+/* ===== NAV =====*/
+.navGameList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: solid 3px rgba(216, 221, 226, 0.4);
+  background-color: rgba(142, 148, 155, 0.4);
+}
+.buttonVolver {
+  display: flex;
+  align-items: center;
+  background-color: rgba(216, 221, 226, 0.4);
+  border-radius: 0.3rem;
+  color: rgba(221, 221, 221, 0.829);
+  border: none;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+.buttonVolver:hover {
+  background-color: rgba(154, 158, 161, 0.4);
+  cursor: pointer;
+}
+/* === BUSCADOR === */
+.buscadorGameList input {
+  background-color: rgba(216, 221, 226, 0.4);
+  color: rgba(221, 221, 221, 0.829);
+  border: none;
+  border-radius: 0.3rem 0rem 0 0.3rem;
+  padding: 0.4rem;
+}
+.shGamelist {
+  background-color: rgba(216, 221, 226, 0.4);
+  border-radius: 0 0.3rem 0.3rem 0;
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-bottom: 3px;
+}
+
+/* === REFRESCAR PARTIDAS === */
+.refreshGameList {
+  margin-right: 0.5rem;
+  padding: 0.3rem;
+  background-color: rgba(154, 158, 161, 0.4);
+  border-radius: 0.3rem;
+  border: none;
+  color: rgba(221, 221, 221, 0.829);
+}
+.refreshGameList:hover {
+  background-color: rgba(100, 103, 105, 0.4);
+  cursor: url("../IMG//pata.png");
+}
+
+/* ===== SUBTITULOS =====*/
+.subtitleGameList {
+  padding: 0.5rem;
+  border-bottom: solid 3px rgba(216, 221, 226, 0.4);
+  display: flex;
+  justify-content: space-around;
+  padding-left: 1rem;
+}
+.subtitleGameList h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 0.3rem;
+  color: rgba(194, 194, 194, 0.829);
+}
+
+/* ===== INFORMACIÓN PARTIDAS DISPONIBLES =====*/
+.infoPartidas {
+  border-bottom: solid 3px rgba(216, 221, 226, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.7rem;
+  padding-left: 1rem;
+  gap: 1rem;
+}
+.unirseGameList {
+  background-color: #e5760ed0;
+  color: rgba(221, 221, 221, 0.829);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  font-weight: bold;
+}
+.unirseGameList:hover {
+  background-color: #080b1a69;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  position: relative;
+  width: 10rem;
+  right: -2.5rem;
+  justify-content: space-around;
+}
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (max-width: 500px) {
+  .containerGameList {
+    margin: 5rem 1rem;
+    min-width: 380px;
+    max-width: 490px;
+  }
+  .buscadorGameList input {
+    width: 8rem;
+  }
+  .subtitleGameList h4 {
+    margin-left: -0.5rem;
+  }
+  .infoPartidas {
+    margin-right: -2rem;
+  }
+  .buttons {
+    right: .5rem;
+    gap: .25rem;
+    justify-content: center;
+  }
+  .vistaButton {
+    display: none;
+  }
+}

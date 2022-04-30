@@ -1,0 +1,48 @@
+.containerPlayStore {
+  overflow-x: hidden;
+  /* background-image: url("../IMG/arena-green.png"); */
+  width: 100%;
+  opacity: 1px;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.contentNavPlayStore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+.containerPlayStore h1 {
+    position: relative;
+    display: inline-block;
+    padding: 0.2em;
+    color: white;
+    background: linear-gradient(70deg, #6b8935a6, #39814bad);
+    font-size: 45px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px 2px #000000fa;
+    font-family: 'Trebuchet MS';
+}
+.btnVolverTienda {
+  height: 3.2rem;
+  background-color: rgb(7, 133, 13);
+  border: 3px solid rgb(46, 187, 53);
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.btnVolverTienda:hover {
+  cursor: url("../IMG/pata.png"), auto;
+  background-color: rgb(22, 185, 30);
+  border: 3px solid rgb(76, 194, 81);
+}
+
+.containerCardsBuy {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 3rem;
+}

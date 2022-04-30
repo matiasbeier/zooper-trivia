@@ -1,0 +1,139 @@
+/* ===== FORM REGISTRO =====*/
+.containerSingUp {
+  background-color: rgba(52, 51, 51, 0.242);
+  border: solid 3px rgba(200, 204, 209, 0.253);
+  max-width: 500px;
+  min-height: 630px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contentSingUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(191, 193, 196, 0.212);
+  margin-top: 4rem;
+  width: 350px;
+  height: 450px;
+  border-radius: 0.4rem;
+  margin-bottom: 10px;
+}
+
+.logoSingUp img{
+  top: 20px;
+  position: relative;
+}
+
+/* ===== BOTÓN VOLVER =====*/
+.volverSingUp {
+  position: relative;
+  top: -155px;
+  width: 450px;
+  display: flex;
+  justify-content: start;
+  
+}
+.volverSingUp button {
+  color: rgba(221, 221, 221, 0.9);
+  background-color: rgb(225, 145, 32);
+  margin-top: 0.5rem;
+}
+.volverSingUp button:hover {
+  cursor: url("../IMG/pata.png"), auto;
+}
+
+/* ===== FORM =====*/
+.contentSingUp form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  margin-top: 4rem;
+}
+.userImg {
+  top: -125px;
+  position: relative;
+  margin: auto;
+  background-color: rgba(185, 193, 202, 0.58);
+  border-radius: 50%;
+}
+
+/* ===== INPUTS =====*/
+.contentSingUp input {
+  background-color: rgba(216, 221, 226, 0);
+  display: flex;
+  align-items: center;
+  border: none;
+  margin: 0.5rem;
+  width: 200px;
+  color: rgba(221, 221, 221, 0.829);
+  border-bottom: solid 3px rgba(216, 221, 226, 0.4);
+  font-size: 15px;
+}
+.cotainerInput {
+  display: flex;
+  align-items: center;
+  top: -85px;
+  position: relative;
+}
+.contentSingUp input::placeholder {
+  color: rgba(221, 221, 221, 0.829);
+}
+.contentSingUp input:focus {
+  outline: none;
+  resize: none;
+}
+
+/* ===== SELECTOR DE AVATAR =====*/
+.avatarsRegister {
+  margin-top: 15px;
+  top: -120px;
+  position: relative;
+  height: 100px;
+  width: 250px;
+}
+
+
+
+.registerButton {
+  text-decoration: none;
+  color: rgba(221, 221, 221, 0.9);
+  background-color: rgb(225, 145, 32);
+  width: 7rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  padding: 0.2rem;
+  border: none;
+  position: relative;
+  top: -30px;
+}
+.registerButton:hover {
+  background-color: rgba(144, 145, 146, 0.521);
+  color: rgba(221, 221, 221, 0.829);
+  cursor: url("../IMG/pata.png"), auto;
+}
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (max-width: 500px) {
+  .containerSingUp {
+    margin: 1rem;
+  }
+  .contentSingUp {
+    width: 300px;
+  }
+  .volverSingUp {
+    width: 320px;
+  }
+  .logoSingUp img{
+    top: 40px;
+    width: 190px;
+    margin-bottom: 1rem;
+  }
+}

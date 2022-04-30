@@ -1,0 +1,96 @@
+.containerReContraseña {
+  background-color: rgba(52, 51, 51, 0.242);
+  border: solid 3px rgba(200, 204, 209, 0.253);
+  max-width: 400px;
+  min-height: 445px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* ====== BOTÓN VOLVER ====== */
+.contentVolver {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 370px;
+  margin-top: -1rem;
+}
+.contentVolver button{
+  top: -25px;
+  position: relative;
+}
+.contentVolver button:hover{
+  cursor: url("../IMG/pata.png"), auto;
+}
+.contentVolver img {
+  position: relative;
+  top: 80px;
+  right: 20px;
+  margin-bottom: 2rem;
+}
+.contentReContraseña {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(191, 193, 196, 0.212);
+  margin-top: 6rem;
+  width: 300px;
+  height: 210px;
+  border-radius: 0.4rem;
+}
+.imgProfile {
+  top: -30px;
+  position: relative;
+  margin: auto;
+  background-color: rgba(185, 193, 202, 0.58);
+  border-radius: 50%;
+}
+.contentReContraseña input {
+  background-color: rgba(216, 221, 226, 0);
+  border: none;
+  margin: 0.5rem;
+  width: 200px;
+  color: rgba(221, 221, 221, 0.829);
+  border-bottom: solid 3px rgba(216, 221, 226, 0.4);
+  margin-bottom: 2rem;
+}
+.contentReContraseña input::placeholder {
+  color: rgba(221, 221, 221, 0.829);
+}
+.contentReContraseña input:focus {
+  outline: none;
+  resize: none;
+}
+.contentReContraseña button {
+  text-decoration: none;
+  color: rgba(221, 221, 221, 0.829);
+  width: 13rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  padding: 0.4rem;
+  background-color: rgba(173, 174, 175, 0.521);
+  border: none;
+}
+.contentReContraseña button:hover {
+  background-color: rgba(165, 166, 167, 0.521);
+  cursor: url("../IMG/pata.png"), auto;
+}
+
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (max-width: 500px) {
+  .containerReContraseña {
+    margin: 3rem 1rem;
+  }
+  .contentVolver {
+    width: 320px;
+  }
+  .contentVolver img {
+    right: 40px;
+  }
+}

@@ -1,0 +1,304 @@
+.container {
+  background-color: rgba(0, 0, 0, 0.392);
+  width: 775px;
+  height: 710px;
+  border: solid 3px rgba(216, 221, 226, 0.4);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.829);
+}
+.iconMusicPreRoom {
+  position: relative;
+  left: 9rem;
+}
+
+.navPreGameRoom {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  width: 700px;
+  height: 110px;
+}
+.buttonVolverPreSala button{
+  color: rgba(255, 255, 255, 0.829);
+}
+
+
+
+
+/* ======= LISTA DE JUGADORES ======= */
+.containerPlayers {
+  background-color: rgba(0, 0, 0, 0.519);
+  border: solid 3px rgba(216, 221, 226, 0.4);
+  width: 350px;
+  min-height: 500px;
+  margin: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.4rem;
+}
+.coronaHost img {
+  height: 30px;
+  position: relative;  
+  margin-left: 25px;
+  margin-right: -120px;
+}
+.allPlayers {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.allPlayers img {
+  height: 25px;
+}
+.contentPlayer{  
+ display: flex;
+ align-items: center;
+}
+.contentAvatar img{
+  height: 55px;
+  width: 55px;
+  margin: -0.8rem;
+}
+.buttonExpulsar{
+  font-size: 10px;
+  width: 20px;
+  height: 20px;  
+  top: 15px;
+  font-weight: bold;
+  position: relative;
+  background-color: rgb(255, 0, 0);
+  color: rgba(255, 255, 255, 0.769);
+  border-radius: 5px;
+  border: none;
+  margin-right: -0.6rem;
+  border-radius: 5px;
+  position: relative;
+  right: 190px; 
+}
+.containerPlayers li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  list-style: none;
+  margin-top: 1rem;
+  margin-right: 4rem;
+  background-color: rgba(78, 84, 80, 0.701);
+  width: 16rem;
+  border-radius: 2rem;
+  color: white;
+}
+/* ======= BOTON READY ======= */
+.readyButton {
+  border-radius: 10px;
+  outline: none;
+  background: none;
+  border: none;
+  margin-right: -0.8rem;
+}
+.readyPhone {
+  display: none;
+}
+
+/* ======= BOTONES INVITAR E INICIAR ======= */
+.buttonsPreGameRoom button {
+  color: rgba(255, 255, 255, 0.769);
+  background-color: rgba(132, 134, 136, 0.4);
+  padding: 0.3rem;
+  border: none;
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+.buttonsPreGameRoom {
+  display:flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ======= EDITAR SALA ======= */
+.containerEditRoom {
+  background-color: rgba(0, 0, 0, 0.519);
+  margin: 1rem;
+  width: 350px;
+  height: 240px;
+  border: solid 3px rgba(216, 221, 226, 0.4);
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 12px;
+}
+.formEditRoom {
+  margin: 0.3rem;
+}
+.contentEditRoom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5rem;
+}
+/* ======= SELECTORES ======= */
+.contentEditRoom select {
+  border-radius: 0.3rem;
+  background-color: rgba(216, 221, 226, 0.4);
+  font-weight: bold;
+  color: rgba(37, 36, 36, 0.626);
+  border: none;
+  padding: 0.3rem;
+}
+
+/* ======= BOTÓN CAMBIOS ======= */
+.buttonSubmitChanges button {
+  padding: 5px;
+  border-radius: 0.3rem;
+  background-color: rgba(253, 139, 0, 0.893);
+  color: rgba(221, 221, 221, 0.829);
+  border: none;
+  font-weight: bold;
+}
+.buttonSubmitChanges button:hover {
+  background-color: rgb(255, 140, 0);
+  cursor: url("../IMG//pata.png"), auto;
+}
+
+/* ======= CHAT ======= */
+.containerChat {
+  overflow-y: scroll;
+  flex-direction: column-reverse;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(41, 41, 43, 0.29);
+  border: solid 3px rgba(216, 221, 226, 0.4);
+  border-radius: 0.4rem;
+  height: 140px;
+  width: 370px;
+  padding-left: .2rem;
+}
+.containerChat::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.containerChat::-webkit-scrollbar:vertical {
+  width:10px;
+}
+.containerChat::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 1px solid #c8cacc;
+}
+.containerSendMessages {
+  margin-top: 1rem;
+}
+.containerSendMessages input {
+  border-radius: 0.3rem;
+  background-color: rgba(39, 41, 42, 0.385);
+  color: rgba(255, 255, 255, 0.84);
+  padding: 0.3rem;
+  border: none;
+  margin-right: 0.5rem;
+}
+.containerSendMessages input::placeholder {
+  color: rgba(255, 255, 255, 0.769);
+}
+.containerSendMessages button {
+  color: rgba(255, 255, 255, 0.769);
+  border-radius: 0.3rem;
+  background-color: rgba(216, 221, 226, 0.4);
+  padding: 0.3rem;
+  border: none;
+}
+.containerSendMessages button:hover {
+  cursor: url("../IMG//pata.png"), auto;
+  background-color: rgba(154, 158, 161, 0.4);
+}
+
+
+.containerButtons{
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 20rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (max-width: 500px) {
+  .containerPlayers {
+    display: none;
+  }
+  .container {
+    margin: 1rem;
+    width: 400px;
+    height: 780px;
+    margin-bottom: 4rem;
+  }
+  .navPreGameRoom h3 {
+    margin-left: -1rem;
+  }
+  .containerEditRoom {
+    width: 370px;
+    height: 300px;
+  }
+  .containerChat {
+    margin: 1rem;
+    width: 360px;
+  }
+  .readyPhone {
+    display: flex;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    border: none;
+    margin-right: -0.8rem;
+    margin-left: 4rem;
+  }
+  .buttonsPreGameRoom button {
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .containerPlayers {
+    display: none;
+  }
+  .container {
+    margin: 1rem;
+    width: 360px;
+    height: 775px;
+    margin-bottom: 4rem;
+  }
+  .navPreGameRoom h3 {
+    margin-left: -1rem;
+  }
+  .containerEditRoom {
+    width: 325px;
+    height: 300px;
+  }
+  .containerChat {
+    margin: 1rem;
+    width: 320px;
+  }
+  .readyPhone {
+    display: flex;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    border: none;
+    margin-right: -0.8rem;
+    margin-left: 4rem;
+  }
+  .buttonsPreGameRoom button {
+    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+  }
+}
